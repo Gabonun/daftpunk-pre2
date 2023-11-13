@@ -1,0 +1,188 @@
+.grid-container-2 {
+    @extend %grid;
+    .encabezado_historia {
+        grid-area: header;
+    }
+
+    .menu_historia {
+        background-color: $color-menu;
+        grid-area: nav;
+        ul {
+            li {
+                display: inline-block;
+                margin: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+    .contenido_historia {
+        background-color: $color-contenido;
+        grid-area: main;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
+        .primeros {
+            text-align: center;
+            margin-bottom: 50px;
+            background-color: $color-logo;
+            width: 100%;
+            
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                color: $color-black;
+            }
+    
+            p {
+                color: $color-black;
+                font-size: 15px;
+            }
+        }
+
+        .homework {
+            margin-bottom: 50px;
+            color: $color-blanco;
+
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+                width: 100%;
+            }
+
+            img {
+                @include img (float, 120px, 120px, 20px, 15px);
+            }
+
+            p {
+                font-size: 15px;
+                text-align: justify;
+                margin: 10px;
+            }
+        }
+
+        .discovery {
+            margin-bottom: 50px;
+            background-color: $color-logo;
+            color: $color-black;
+            width: 100%;
+
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+            }
+
+            img {
+                @include img (right, 120px, 120px, 20px, 15px);
+            }
+
+            p {
+                font-size: 15px;
+                text-align: justify;
+                margin: 10px;
+            }
+        }
+
+        .human {
+            margin-bottom: 50px;
+            color: $color-blanco;
+        
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+                width: 100%;
+            }
+        
+            img {
+                @include img (left, 120px, 120px, 20px, 15px);
+            }
+        
+            p {
+                font-size: 15px;
+                text-align: justify;
+                margin: 10px;
+                color: $color-blanco;
+            }
+        }
+
+        .tron {
+            margin-bottom: 50px;
+            width: 100%;
+            background-color: $color-logo;
+            color: $color-black;
+        
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+            }
+            
+            img {
+                @include img (right, 120px, 120px, 20px, 15px);
+            }
+            
+            p {
+                font-size: 15px;
+                text-align: left;
+                margin: 10px;
+            }
+        }
+
+        .ram {
+            margin-bottom: 50px;
+            width: 100%;
+            color: $color-black;
+
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+                color: $color-blanco;
+            }
+
+            img {
+                @include img (left, 120px, 120px, 20px, 15px);
+            }
+
+            p {
+                font-size: 15px;
+                text-align: left;
+                margin: 10px;
+                color: $color-blanco;
+            }
+        }
+
+        .separacion {
+            margin-bottom: 50px;
+            width: 100%;
+            background-color: $color-menu;
+            color: $color-black;
+
+            h2 {
+                font-family: "Daft Font"; 
+                font-size: 30px;
+                text-align: center;
+            }
+
+            img {
+                @include img (right, 120px, 120px, 20px, 15px);
+            }
+
+            p {
+                font-size: 15px;
+                text-align: left;
+                margin: 10px;
+            }
+        }
+    }
+
+    .pie_historia {
+        @extend %pie;
+    }
+}

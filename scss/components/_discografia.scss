@@ -1,0 +1,59 @@
+.grid-container-disco {
+    @extend %grid;
+    .encabezado_disco {
+        grid-area: header;
+    }
+
+    .menu_disco {
+        background-color: $color-menu;
+        grid-area: nav;
+        ul {
+            li {
+                display: inline-block;
+                margin: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+    .contenido_disco {
+        background-color: $color-contenido;
+        grid-area: main;
+        .productos {
+            text-align: center;
+            h2 {
+                text-align: center;
+                color: $color-blanco;
+            }
+            div {
+                border: 2px solid $color-logo;
+                @include tamano(150px, 300px);
+                margin: 10px;
+                text-align: center;
+                display: inline-block;
+                color: $color-black;
+                img {
+                    @include tamano(140px, 140px);
+                    padding: 1px;
+                }
+                h3 {
+                    font-size: 15px;
+                    margin: 20px 0px 20px 0px;
+                }
+                a {
+                    text-decoration: none;
+                    padding: 5px;
+                    color: $color-blanco;
+                    font-size: 15px;
+                }
+            }
+        }     
+    }
+
+    .pie_disco {
+        @extend %pie;
+    }
+}

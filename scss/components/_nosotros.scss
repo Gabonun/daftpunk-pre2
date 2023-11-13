@@ -1,0 +1,30 @@
+.grid-container-nosotros {
+    @extend %grid;
+    .encabezado_nosotros {
+        grid-area: header;
+    }
+
+    .menu_nosotros {
+        background-color: $color-menu;
+        grid-area: nav;
+        ul {
+            li {
+                display: inline-block;
+                margin: 20px;
+                a {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
+    }
+
+    .contenido_nosotros {
+        background-color: $color-contenido;
+        grid-area: main;   
+    }
+
+    .pie_nosotros {
+        @extend %pie;
+    }
+}
